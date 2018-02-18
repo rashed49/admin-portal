@@ -1,0 +1,8 @@
+<nav class="navbar navbar-light  bg-primary">
+  <span class="navbar-brand mb-0 h1"><h5 [style.color]="'white'">Admin Portal</h5></span>
+  <span class="ras"></span>
+ <span [hidden]="!isLoggedIn"> <button type="button" class="btn btn-primary">View Book List</button></span>
+ <span [hidden]="!isLoggedIn"> <button type="button" class="btn btn-primary">Add a List</button></span>
+  <span [hidden]="!isLoggedIn"> <button type="button" class="btn btn-primary">Logout</button></span>
+</nav>
+<button class="btn btn-danger" (click)="toggle()">Toggle</button>
